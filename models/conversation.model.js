@@ -102,7 +102,7 @@ var getConversationById = function(params,callback){
     path:'messages',
     populate:{
       path:'targetId',
-      model:'admin',
+      model:'user',
       select:{'firstName':1,'lastName':1,'profileImage':1}
     }
   })
@@ -145,7 +145,7 @@ var getConversations = function(params,callback){
     path:'messages',
     populate:{
       path:'targetId',
-      model:'admin',
+      model:'user',
       select:{'firstName':1,'lastName':1,'profileImage':1}
     }
   })
